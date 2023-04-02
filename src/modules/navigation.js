@@ -5,8 +5,8 @@ import { pageLoad } from "./pageLoad";
 function navigation() {
 	// Bottom navigation on every page
 	const nav = createHtmlElement(/* html */ `
-        <nav class="flex justify-center fixed bottom-0 w-screen mb-5">
-            <ul id="navButtons" class="flex justify-center align-middle gap-4 bg-slate-200 border-2 rounded-lg p-3 shadow-lg"></ul>
+        <nav class="flex justify-center fixed bottom-0 w-screen mb-5 z-10">
+            <ul id="navButtons" class="flex justify-center align-middle gap-4 bg-slate-200 border-2 border-slate-800 rounded-lg p-3 shadow-xl"></ul>
         </nav>
     `);
 
