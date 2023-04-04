@@ -11,4 +11,18 @@ function clearContent() {
 	navigation();
 }
 
-export { createHtmlElement, clearContent };
+function themeCheck() {
+	switch (localStorage.theme) {
+		case undefined:
+			localStorage.setItem("theme", "dark");
+			break;
+		case "light":
+			document.querySelector("html").classList.remove("dark");
+			break;
+		case "dark":
+			document.querySelector("html").classList.add("dark");
+			break;
+	}
+}
+
+export { createHtmlElement, clearContent, themeCheck };

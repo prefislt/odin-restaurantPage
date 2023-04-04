@@ -1,9 +1,11 @@
 import { homePage } from "./homePage";
 import { contactsPage } from "./contactsPage";
 import { menuPage } from "./menuPage";
+import { themeCheck } from "./usefulFunctions";
 
 function initialLoad() {
-	homePage();
+	menuPage();
+	themeCheck();
 }
 
 function pageLoad(id) {

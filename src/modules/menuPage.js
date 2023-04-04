@@ -4,16 +4,16 @@ import { menuItems } from "./config";
 function menuPage() {
 	clearContent();
 	const html = createHtmlElement(/*html*/ `
-    <div class="flex justify-center flex-col w-screen text-white py-28 gap-4">
+    <div class="flex justify-center flex-col w-screen text-slate-800 dark:text-slate-200 py-28 gap-4">
         <div class="flex flex-col justify-center items-center">
             <div class="w-32">
-                <svg fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3 2h2v20H3zm7 4h7v2h-7zm0 4h7v2h-7z"></path><path d="M19 2H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 18H8V4h11v16z"></path></g></svg>
+                <svg class="fill-slate-800 dark:fill-slate-200" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M3 2h2v20H3zm7 4h7v2h-7zm0 4h7v2h-7z"></path><path d="M19 2H6v20h13c1.103 0 2-.897 2-2V4c0-1.103-.897-2-2-2zm0 18H8V4h11v16z"></path></g></svg>
             </div>
             <span class="font-bold text-4xl">Menu items</span> 
             <p class="">Enjoy the best food ever served by our amazing chefs!</p>
         </div>
         <div class="flex justify-center">
-            <ul id="menuItemsBox" class="w-96 rounded-lg bg-slate-200 mt-3 text-slate-800 p-5 mt-10 divide-y">
+            <ul id="menuItemsBox" class="w-96 rounded-lg bg-slate-200 dark:bg-slate-800 mt-3 dark:text-slate-200 text-slate-800 p-5 mt-10 border-2 border-slate-800 dark:border-slate-200">
             </ul>
         </div>
     </div>
@@ -33,7 +33,7 @@ function menuPage() {
 		if (menuItems.length !== i + 1) {
 			html.querySelector(
 				"#menuItemsBox"
-			).innerHTML += `<hr class="my-6 h-0.5 border-t-0 bg-slate-600 opacity-100 dark:opacity-50"></hr>`;
+			).innerHTML += `<hr class="my-6 h-0.5 border-y-0 bg-slate-600"></hr>`;
 		}
 	}
 
