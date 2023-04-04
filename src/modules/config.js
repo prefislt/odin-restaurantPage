@@ -31,7 +31,7 @@ let menuItems = [
 let contactsItems = [
 	{
 		email: "myemail.business@fakeemail.com",
-		phoneNumer: "(209) 656-9339",
+		phoneNumber: "(209) 656-9339",
 		address: "47 Highland Park Village, Dallas, Texas",
 	},
 ];
