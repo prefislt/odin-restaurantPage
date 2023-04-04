@@ -4,8 +4,8 @@ import { menuPage } from "./menuPage";
 import { themeCheck } from "./usefulFunctions";
 
 function initialLoad() {
-	homePage();
 	themeCheck();
+	homePage();
 }
 
 function pageLoad(id) {
