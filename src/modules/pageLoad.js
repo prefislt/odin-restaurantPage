@@ -4,7 +4,7 @@ import { menuPage } from "./menuPage";
 import { themeCheck } from "./usefulFunctions";
 
 function initialLoad() {
-	contactsPage();
+	homePage();
 	themeCheck();
 }
 
