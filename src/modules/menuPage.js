@@ -13,7 +13,7 @@ function menuPage() {
             <p class="">Enjoy the best food ever served by our amazing chefs!</p>
         </div>
         <div class="flex justify-center">
-            <ul id="menuItemsBox" class="w-96 rounded-lg bg-slate-200 dark:bg-slate-800 mt-3 dark:text-slate-200 text-slate-800 p-5 mt-10 border-2 border-slate-800 dark:border-slate-200">
+            <ul id="menuItemsBox" class="w-96 rounded-lg bg-slate-200 dark:bg-slate-800 dark:text-slate-200 text-slate-800 p-5 mt-10 border-2 border-slate-800 dark:border-slate-200">
             </ul>
         </div>
     </div>
